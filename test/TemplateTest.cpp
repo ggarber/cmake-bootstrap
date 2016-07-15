@@ -4,6 +4,8 @@
 
 #include "Template.hpp"
 
+using namespace bootstrap;
+
 class TemplateTest: public ::testing::Test {
  protected:
   TemplateTest() {

@@ -10,6 +10,5 @@ make -j 8
 ```
 
 ADD LOG4CXXX
-ADD namespaces
 ADD cppdoc
 ADD more C++14 examples
