@@ -1,13 +1,14 @@
-add_library(Foo
-    Foo.cpp
+file (GLOB_RECURSE SRCS . *.cpp)
+
+add_library(${PROJECT_NAME}
+    ${SRCS}
 )
 
-add_executable(FooMain
-    # Add source files here
-    FooMain.cpp
+add_executable(Main
+    Main.cpp
 )
 
-target_link_libraries(FooMain
+target_link_libraries(Main
     # Add libraries here
-    Foo
+    ${PROJECT_NAME}
 )
