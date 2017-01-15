@@ -3,8 +3,6 @@ project (ProjectName)
 
 set (CMAKE_CXX_STANDARD 11)
 
-enable_testing ()
-
 include_directories (${PROJECT_BINARY_DIR}/ext/include)
 link_directories (${PROJECT_BINARY_DIR}/ext/lib)
 

@@ -1,6 +1,6 @@
 // Copyright 2016 <ggarber@github>
 
-#include "gtest/gtest.h"
+#include <gtest/gtest.h>
 
 #include "Template.hpp"
 
