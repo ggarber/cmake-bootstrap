@@ -4,7 +4,7 @@
 
 #include "Template.hpp"
 
-using namespace bootstrap;
+using bootstrap::Template;
 
 void Template::run() const {
   std::cout << "Hello world!\n";
