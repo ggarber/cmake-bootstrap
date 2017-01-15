@@ -1,10 +1,10 @@
 // Copyright 2016 <ggarber@github>
 
-#include "gtest/gtest.h"
+#include <gtest/gtest.h>
 
 #include "Template.hpp"
 
-using namespace bootstrap;
+using bootstrap::Template;
 
 class TemplateTest: public ::testing::Test {
  protected:
