@@ -8,7 +8,6 @@ addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
-      - llvm-toolchain-precise-3.6
       - george-edison55-precise-backports
     packages:
       - cmake
@@ -19,4 +18,5 @@ addons:
 script:
   - mkdir build
   - cd build
-  - cmake .. && make
+  - cmake ..
+  - make
