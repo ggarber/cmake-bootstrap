@@ -1,20 +1,19 @@
 include (ExternalProject)
 
 set (EXTERNAL_LIBRARIES uv PARENT_SCOPE)
-set (EXTERNAL_PROJECTS log4cxx_project libuv_project PARENT_SCOPE)
+set (EXTERNAL_PROJECTS spdlog_project libuv_project PARENT_SCOPE)
 
 set (EXTERNAL_TEST_LIBRARIES gtest PARENT_SCOPE)
 set (EXTERNAL_TEST_PROJECTS gtest_project PARENT_SCOPE)
 
-externalproject_add (log4cxx_project
-  URL http://mirror.cogentco.com/pub/apache/logging/log4cxx/0.10.0/apache-log4cxx-0.10.0.tar.gz
-  URL_MD5 b30ffb8da3665178e68940ff7a61084c
+externalproject_add (spdlog_project
+  GIT_REPOSITORY https://github.com/gabime/spdlog.git
+  GIT_TAG v0.11.0
   BUILD_IN_SOURCE 1
   UPDATE_COMMAND ""
-  PATCH_COMMAND patch -N -p1 < ${CMAKE_CURRENT_SOURCE_DIR}/log4cxx-diff.patch || true
-  CONFIGURE_COMMAND ./configure --prefix=${CMAKE_BINARY_DIR}/ext --disable-doxygen --disable-debug --disable-dependency-tracking
-  BUILD_COMMAND make
-  INSTALL_COMMAND make install
+  CONFIGURE_COMMAND ""
+  BUILD_COMMAND ""
+  INSTALL_COMMAND pwd && cp -R include/spdlog ${CMAKE_BINARY_DIR}/ext/include
 )
 
 externalproject_add (gtest_project
