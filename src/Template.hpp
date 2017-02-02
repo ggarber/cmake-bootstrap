@@ -1,7 +1,7 @@
 // Copyright 2016 <ggarber@github>
 
-#ifndef TEMPLATE_H
-#define TEMPLATE_H
+#ifndef SRC_TEMPLATE_HPP_
+#define SRC_TEMPLATE_HPP_
 
 namespace bootstrap {
 
@@ -12,6 +12,6 @@ class Template {
   int sum(int a, int b) const;
 };
 
-}
+}  // namespace bootstrap
 
-#endif  // TEMPLATE_H
+#endif  // SRC_TEMPLATE_HPP_
