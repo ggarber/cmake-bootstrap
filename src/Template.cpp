@@ -1,8 +1,8 @@
 // Copyright 2016 <ggarber@github>
 
-#include <iostream>
-
 #include "Template.hpp"
+
+#include <iostream>
 
 using bootstrap::Template;
 
