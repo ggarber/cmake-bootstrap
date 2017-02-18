@@ -1,4 +1,4 @@
-// Copyright 2016 <ggarber@github>
+// Copyright 2017 <ggarber@github>
 
 #include "Template.hpp"
 
